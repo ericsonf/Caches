@@ -1,0 +1,17 @@
+SimpleCache/obj/Debug/netcoreapp2.0/SimpleCache.dll
+SimpleCache/obj/Debug/netcoreapp2.0/SimpleCache.pdb
+SimpleCache/obj/Debug/netcoreapp2.0/SimpleCache.AssemblyInfo.cs
+SimpleCache/obj/Debug/netcoreapp2.0/SimpleCache.AssemblyInfoInputs.cache
+SimpleCache/obj/Debug/netcoreapp2.0/SimpleCache.csproj.CoreCompileInputs.cache
+SimpleCache/obj/Debug/netcoreapp2.0/SimpleCache.csproj.FileListAbsolute.txt
+SimpleCache/bin/Debug/netcoreapp2.0/SimpleCache.dll
+SimpleCache/bin/Debug/netcoreapp2.0/SimpleCache.pdb
+SimpleCache/bin/Debug/netcoreapp2.0/SimpleCache.deps.json
+SimpleCache/bin/Debug/netcoreapp2.0/SimpleCache.runtimeconfig.json
+SimpleCache/bin/Debug/netcoreapp2.0/SimpleCache.runtimeconfig.dev.json
+SimpleCache/obj/project.assets.json
+SimpleCache/obj/SimpleCache.csproj.nuget.cache
+SimpleCache/obj/SimpleCache.csproj.nuget.g.props
+SimpleCache/obj/SimpleCache.csproj.nuget.g.targets
+.vscode/tasks.json
+.vscode/launch.json
