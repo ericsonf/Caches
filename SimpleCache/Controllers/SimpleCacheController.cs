@@ -10,29 +10,32 @@ namespace SimpleCache.Controllers
     [Route("api/[controller]")]
     public class SimpleCacheController : Controller
     {
-        private IMemoryCache _cache;
+        private IMemoryCache _memoryCache;
 
         public SimpleCacheController(IMemoryCache memoryCache)
         {
-            _cache = memoryCache;
+            _memoryCache = memoryCache;
         }
 
         // GET api/cache
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
             var actualDate = DateTime.Now.ToString();
             var cachedDate = string.Empty;
             var key = "cacheKey";
 
-            if (!_cache.TryGetValue<string>(key, out cachedDate))
+            if (_memoryCache.TryGetValue<string>(key, out cachedDate))
             {
-                cachedDate = DateTime.Now.ToString();
-                var cacheExpiration = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(5));
-                _cache.Set<string>(key, cachedDate, cacheExpiration);
+                return string.Concat("Data cache: ", cachedDate);
             }
-
-            return new string[] { string.Concat("Data atual: ", actualDate), string.Concat("Data cache: ", cachedDate) };
+            else
+            {
+                cachedDate = actualDate;
+                var cacheExpiration = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(10));
+                _memoryCache.Set<string>(key, cachedDate, cacheExpiration);
+                return string.Concat("Data atual: ", actualDate);
+            }
         }
     }
 }

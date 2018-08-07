@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace SimpleCache
+namespace RedisCache
 {
     public class Startup
     {
@@ -23,7 +23,12 @@ namespace SimpleCache
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMemoryCache();
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration = Configuration.GetConnectionString("OpenSourceSaturdayConn");
+                options.InstanceName = "OpenSourceSaturday";
+            });
+
             services.AddMvc();
         }
 
