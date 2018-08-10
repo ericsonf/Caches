@@ -29,6 +29,13 @@ namespace RedisSession
                 options.InstanceName = "OpenSourceSaturday";
             });
 
+            // services.AddDistributedSqlServerCache(options =>
+            // {
+            //     options.ConnectionString = Configuration.GetConnectionString("OpenSourceSaturdaySQLConn");
+            //     options.SchemaName = "dbo";
+            //     options.TableName = "OpenSourceSaturdayTable";
+            // });
+
             services.AddSession(options => {   
                 options.IdleTimeout = TimeSpan.FromSeconds(50); 
             });
