@@ -25,16 +25,16 @@ namespace RedisCache
         {
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = Configuration.GetConnectionString("OpenSourceSaturdayConn");
-                options.InstanceName = "OpenSourceSaturday";
+                options.Configuration = Configuration.GetConnectionString("OpenSourceRoadshowConn");
+                options.InstanceName = "OpenSourceRoadshow";
             });
 
-            // services.AddDistributedSqlServerCache(options =>
-            // {
-            //     options.ConnectionString = Configuration.GetConnectionString("OpenSourceSaturdaySQLConn");
-            //     options.SchemaName = "dbo";
-            //     options.TableName = "OpenSourceSaturdayTable";
-            // });
+            //services.AddDistributedSqlServerCache(options =>
+            //{
+            //    options.ConnectionString = Configuration.GetConnectionString("OpenSourceRoadshowSQLConn");
+            //    options.SchemaName = "dbo";
+            //    options.TableName = "OpenSourceRoadshow";
+            //});
 
             services.AddMvc();
         }

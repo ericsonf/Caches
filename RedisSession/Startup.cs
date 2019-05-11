@@ -25,15 +25,15 @@ namespace RedisSession
         {
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = Configuration.GetConnectionString("OpenSourceSaturdayConn");
-                options.InstanceName = "OpenSourceSaturday";
+                options.Configuration = Configuration.GetConnectionString("OpenSourceRoadshowConn");
+                options.InstanceName = "OpenSourceRoadshow";
             });
 
             // services.AddDistributedSqlServerCache(options =>
             // {
-            //     options.ConnectionString = Configuration.GetConnectionString("OpenSourceSaturdaySQLConn");
+            //     options.ConnectionString = Configuration.GetConnectionString("OpenSourceRoadshowSQLConn");
             //     options.SchemaName = "dbo";
-            //     options.TableName = "OpenSourceSaturdayTable";
+            //     options.TableName = "OpenSourceRoadshow";
             // });
 
             services.AddSession(options => {   

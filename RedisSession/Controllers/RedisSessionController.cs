@@ -14,12 +14,12 @@ namespace RedisSession.Controllers
         [HttpGet]
         public string Get()
         {
-            var key = "sessionCacheKey";
+            var key = "sessioncachekey";
             var storedValue = HttpContext.Session.GetString(key);
             
             if (string.IsNullOrEmpty(storedValue))
             {
-                storedValue = "Open Source Saturday";
+                storedValue = "Open Source Roadshow";
                 HttpContext.Session.SetString(key, storedValue);
             }
 
@@ -30,7 +30,7 @@ namespace RedisSession.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            var key = "sessionCacheKey";
+            var key = "sessioncachekey";
             var storedValue = HttpContext.Session.GetString(key);
             
             if (string.IsNullOrEmpty(storedValue))

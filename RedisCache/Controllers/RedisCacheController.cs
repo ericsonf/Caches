@@ -22,7 +22,7 @@ namespace RedisCache.Controllers
         public string Get()
         {
             var date = string.Empty;
-            var key = "distributedCacheKey";
+            var key = "distributedcachekey";
 
             date = _distributedCache.GetString(key);
             if (!string.IsNullOrEmpty(date))
