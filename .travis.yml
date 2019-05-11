@@ -1,0 +1,10 @@
+language: csharp  
+mono: none
+dotnet: 2.2
+dist: bionic
+sudo: required
+solution: Caches.sln
+
+script:
+ - dotnet restore
+ - dotnet build
