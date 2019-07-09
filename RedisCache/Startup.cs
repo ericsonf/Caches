@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace RedisCache
 {
@@ -25,15 +19,15 @@ namespace RedisCache
         {
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = Configuration.GetConnectionString("OpenSourceRoadshowConn");
-                options.InstanceName = "OpenSourceRoadshow";
+                options.Configuration = Configuration.GetConnectionString("CachesConn");
+                options.InstanceName = "Caches";
             });
 
             //services.AddDistributedSqlServerCache(options =>
             //{
-            //    options.ConnectionString = Configuration.GetConnectionString("OpenSourceRoadshowSQLConn");
+            //    options.ConnectionString = Configuration.GetConnectionString("CachesSQLConn");
             //    options.SchemaName = "dbo";
-            //    options.TableName = "OpenSourceRoadshow";
+            //    options.TableName = "Caches";
             //});
 
             services.AddMvc();

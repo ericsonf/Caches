@@ -113,3 +113,11 @@ SimpleCache/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B5
 SimpleCache/obj/Release/netcoreapp2.0/SimpleCache.AssemblyInfo.cs
 SimpleCache/obj/Release/netcoreapp2.0/SimpleCache.AssemblyInfoInputs.cache
 SimpleCache/obj/Release/netcoreapp2.0/SimpleCache.csproj.CoreCompileInputs.cache
+RedisCache/obj/RedisCache.csproj.nuget.dgspec.json
+RedisCache/obj/Debug/netcoreapp2.2/RedisCache.RazorTargetAssemblyInfo.cache
+RedisCache/obj/Debug/netcoreapp2.2/RedisCache.RazorAssemblyInfo.cs
+RedisCache/obj/Debug/netcoreapp2.2/RedisCache.RazorAssemblyInfo.cache
+SimpleCache/obj/SimpleCache.csproj.nuget.dgspec.json
+RedisSession/obj/RedisSession.csproj.nuget.dgspec.json
+.vs/Caches/v16/.suo
+.vs/Caches/config/applicationhost.config
