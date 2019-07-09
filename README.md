@@ -3,7 +3,7 @@
 ## Description / Descrição
 [EN] This repository contains examples on how to create a Memory Cache, a Distributed Cache and Sessions using ASP.NET Core 2.2 and Redis on Azure.
 
-[PT] Este repositório contém exemplos sobre como criar um Memory Cache, um Distributed Cache e Sessions utilizando o ASP.NET Core 2.2 e o Redis on Azure.
+[PT] Este repositório contém exemplos sobre como criar um Cache em memória, um Cache Distribuido e Sessões utilizando o ASP.NET Core 2.2 e o Redis on Azure.
 
 ## How to run / Como executar
 [EN] Change "<SUA_CONEXAO_REDIS>" with your connection in Redis in Azure and "<SUA_CONEXAO_SQLSERVER>" with your SQL Server connection if you want to use it in the appsetting.json file.
